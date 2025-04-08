@@ -1,0 +1,335 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="icon" href="static/apprequest/images/SOMservice_LogoSite">
+    <link rel="stylesheet" href="static/apprequest/css/style.css">
+</head>
+<body>
+<header class="header_class" id="header_point">
+    <div class="links_section SOM_logo">
+        <a href="{% url 'home'%}"><img class="som_logo ls" alt="SOM service(image)" src="static/apprequest/images/som_logo_img.png"></a>
+        <div class="text_som ls">
+            <p>САМЫЕ</p>
+            <p>ОПЫТНЫЕ</p>
+            <p>МАСТЕРА</p>
+        </div>
+    </div>
+    <div class="links_section links_drop_section" id="links_drop_sections">
+        <div class="links_section blk_fst">
+            <div class="links_section block_one">
+                <a href="#Service_img" class="link_position wk_link"><p class="bw lw" id="link_button">УСЛУГИ</p></a>
+                <a href="#Calculator_point" class="ps wk_link">КАЛЬКУЛЯТОР</a>
+                <a href="#Work_img" class="prepared_work wk_link"><p class="bw lw">ГОТОВЫЕ РАБОТЫ</p></a>
+            </div>
+        </div>
+        <div class="links_section block_two">
+            <div class="number_section">
+                <p>8 (969) 047-75-45</p>
+            </div>
+            <div class="links_contacts_section">
+                <a href="https://vk.com/vovanten_bobspuare" class="vk_img contacts_links"><img class="vk_img contacts_img" alt="" src="static/apprequest/images/vk.png"></a>
+                <a href="https://t.me/VEXBobten" class="tg_img contacts_links"><img class="tg_img contacts_img" alt="" src="static/apprequest/images/tg.png"></a>
+                <a href="https://api.whatsapp.com/send?phone=79690477545" class="whatsapp_img contacts_links"><img class="whatsapp_img contacts_img" alt="" src="static/apprequest/images/whatsapp.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="menu_section">
+        <button type="button" class="open_menu" id="opens_menu"><img src="static/apprequest/images/menu_img.png" class="menu_image"></button>
+    </div>
+</header>
+
+<main>
+    <section class="portrayal_section" id="Portraial_pages">
+        <div class="portrayal_contain">
+            <div class="portrayal_image">
+                <video controls src="static/apprequest/images/SOM_service_video.mp4" class="som_service_video"></video>
+            </div>
+            <div class="working_button">
+                <img class="work_img" alt="" src="static/apprequest/images/Work_Seiling_Tools.png">
+                <button type="button" class="work_button button_works" id="button_works">Рассчитать стоимость</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="service_section" id="image_position">
+        <img class="arrow_second content_complate_first" src="static/apprequest/images/Arrow 1.png" id="Service_img">
+        <div class="services_place compaks">
+            <img src="static/apprequest/images/Service_image.png" class="service_image content_complate_second">
+        </div>
+        <div class="view">
+            <div class="first_buttons">
+                <button type="button" class="button_work button_works"><img class="Curtain_img content_first links" alt="" src="static/apprequest/images/Curtain.png"></button>
+                <button type="button" class="button_work button_works"><img class="Wardrobe_img content_second links" alt="" src="static/apprequest/images/Wardrobe.png"></button>
+            </div>
+            <div class="second_buttons">
+                <button type="button" class="button_work button_works"><img class="Photo_print_img content_second links" alt="" src="static/apprequest/images/Photo_print.png"></button>
+                <button type="button" class="button_work button_works"><img class="Conditioner_img content_first links" alt="" src="static/apprequest/images/Conditioner.png"></button>
+            </div>
+            <div class="third_buttons">
+                <button type="button" class="button_work button_works"><img class="Replacement_ceiling_img content_first links" alt="" src="static/apprequest/images/Replacement_ceiling.png"></button>
+                <button type="button" class="button_work button_works"><img class="Light_img content_second links" alt="" src="static/apprequest/images/Light.png"></button>
+                <button type="button" class="button_work button_works"><img class="Drain_water_img content_first links" alt="" src="static/apprequest/images/Drain_water.png"></button>
+            </div>
+        </div>
+    </section>
+
+    <form action="{% url 'home' %}" method="post" id="form_first">
+    <section class="calculator_page">
+        <img src="static/apprequest/images/Arrow 1.png" class="arrow_first content_complate_first" id="Calculator_point">
+        <div class="calculator_pages_images content_complate_first">
+            <img src="static/apprequest/images/Calculator_pages_image.png" class="calculator_navigation">
+        </div>
+        <img src="static/apprequest/images/Calculator_img.png" class="calculator_image calculator_img">
+        <img src="static/apprequest/images/Rulet_Auto_img.png" class="rulet_auto_img calculator_img">
+        <img src="static/apprequest/images/Rulet_img.png" class="rulet_img calculator_img">
+        <img src="static/apprequest/images/Pencel_img.png" class="pencel_img calculator_img">
+        <div class="calculator_ground">
+            <div class="calc-section calculator_one">
+                <!-- Тип полотна -->
+                <div class="check_points">
+                    <div class="dropdown_seiling calc_contain">
+                        <div class="active_const">
+                            <span>Покрытие:</span>
+                        </div>
+                        <div class="select_point active_const">
+                            <span class="selected_chois">Матовый</span>
+                            <div class="arrow_drop"></div>
+                        </div>
+                        <ul class="menu_of_seiling">
+                            <li>Глянцевый</li>
+                            <li>Сатиновый</li>
+                            <li>Тканевый</li>
+                            <li class="active_seiling">Матовый</li>
+                            <li>Фактурный</li>
+                        </ul>
+                    </div>
+
+                    <!-- Освещение -->
+
+                    <div class="lamp calc_contain">
+                        <div class="active_const">
+                            <span>Люстры, шт:</span>
+                        </div>
+                        <div class="active-lamp active_const">
+                            <input min="0" max="250" value="0" type="number" name="lamp-input" id="lamp-input" class="input_dop_work">
+                        </div>
+                    </div>
+
+                    <div class="luminaire calc_contain">
+                        <div class="active_const">
+                            <span>Светильники, шт:</span>
+                        </div>
+                        <div class="active-luminaire active_const">
+                            <input min="0" max="250" value="0" type="number" name="luminaire-input" id="luminaire-input" class="input_dop_work">
+                        </div>
+                    </div>
+                </div>
+                <!-- Площадь потолка -->
+
+                <div class="range_section calc_contain">
+                    <div class="numbers_department">
+                        <label class="input_checkbox">
+                            <span class="input_line"><label>Площадь</label><label>помещения, м²:</label></span>
+                        </label>
+
+                        <div class="slider_sum">
+                            <input type="number" min="1" max="250" value="1" name="square-input" id="square-input" class="input_square_number">
+                        </div>
+                    </div>
+                    <div class="slider_contain">
+                        <div class="slider">
+                            <input type="range" id="square-range" class="input_range_number" min="1" max="250" value="1" step="1">
+                            <progress max="250" value="1" id="progress_bar"></progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price_department calculator_one">
+                <div class="price-section items">
+                    <div class="items_component">
+                        <span class="return_line">Итого:</span>
+                    </div>
+                    <div class="items_component">
+                        {% csrf_token %}
+                        <span class="title_price" id="total-price">499</span>
+                        <span class="title_price">₽</span>
+                    </div>
+                </div>
+                <div class="order_department items">
+                    <input id="phone_input" name="phone-input" class="phone_number order_component" type="tel" placeholder="Телефон" data-phone-pattern required />
+                    <button type="submit" class="order order_component">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </form>
+
+    <section class="working_finished">
+
+        <img class="arrow_third content_complate_first" src="static/apprequest/images/Arrow 1.png" id="Work_img">
+        <div class="finished_works compaks">
+            <img src="static/apprequest/images/Finished_work.png" class="finished_image content_complate_second">
+        </div>
+
+        <div class="img_contain">
+
+            <div class="first_images_complate_work_contain">
+                <button type="button" class="button_work button_first_images"><img class="Kitchen_img content_first links" alt="" src="static/apprequest/images/Kitchen.png"></button>
+                <button type="button" class="button_work button_second_images"><img class="Childrens_room_img content_first links" alt="" src="static/apprequest/images/Childrens_room.png"></button>
+            </div>
+
+            <div class="second_images_complate_work_contain">
+                <button type="button" class="button_work button_third_images"><img class="Bath_room_img content_second links" alt="" src="static/apprequest/images/Bath_room.png"></button>
+                <button type="button" class="button_work button_fourth_images"><img class="The_office_img content_first links" alt="" src="static/apprequest/images/The_office.png"></button>
+                <button type="button" class="button_work button_fifth_images"><img class="Bed_room_img content_second links" alt="" src="static/apprequest/images/Bed_room.png"></button>
+                <button type="button" class="button_work button_sixth_images"><img class="Living_room_img content_second links" alt="" src="static/apprequest/images/Living_room.png"></button>
+            </div>
+
+        </div>
+    </section>
+
+    <form action="{% url 'homes' %}" method="post" id="form_second">
+    <div class="open_contact" id="open_contacts">
+        <div class="contact_open_contain">
+            <button type="button" id="close_contact" class="close_open_contact">X</button>
+            <p class="height_one">Оставьте заявку на расчет стоимости по телефону</p>
+            <p class="height_two">Мы свяжемся с вами и сориентируем по стоимости работ и материалов</p>
+            <input type="text" class="name_contacts contacts_array oc" name="name-contacts" placeholder="Имя">
+            <input name="phone-number-input" type="tel" class="phone_number_contacts contacts_array oc" placeholder="Телефон" data-phone-pattern>
+            <button class="button_opens oc" id="button_open"><label>Узнать стоимость</label></button>
+            <div class="chats_contain oc">
+                <a href="https://api.whatsapp.com/send?phone=79690477545" class="contain_links gr open_contacts_links">WhatsApp</a>
+                <a href="https://t.me/VEXBobten" class="contain_links bl open_contacts_links">Telegram</a>
+            </div>
+
+            <!--<p class="confidence">
+                <label class="check_open_confidence">
+                    <input type="checkbox" id="check_confidence" checked>
+                    <span class="checked_open"></span>
+                </label>
+            Я даю согласие на обработку персональных данных согласно политике конфиденциальности</p>-->
+        </div>
+    </div>
+    </form>
+
+    <div class="background_images" id="open_first_images">
+        <div class="clouse_button">
+            <img src="static/apprequest/images/CrossIconBlue.png" class="clouse_button_image">
+        </div>
+        <div class="open_images">
+            <img src="static/apprequest/images/Complate_Kitchen_First.png" alt="" class="slider_images slider_first_images active_img">
+            <img src="static/apprequest/images/Complate_Kitchen_Second.png" alt="" class="slider_images slider_first_images active_img">
+            <img src="static/apprequest/images/Complate_Kitchen_Third.png" alt="" class="slider_images slider_first_images active_img">
+        </div>
+        <div class="button_navigation">
+            <img src="static/apprequest/images/ArrowForSlider.png"  onclick="onLeftFirst()" class="arrow_right slider_arrow">
+            <img src="static/apprequest/images/ArrowForSlider.png" onclick="onRightFirst()" class="arrow_left slider_arrow">
+        </div>
+    </div>
+
+    <div class="background_images" id="open_second_images">
+        <div class="clouse_button">
+            <img src="static/apprequest/images/CrossIconBlue.png" class="clouse_button_image">
+        </div>
+        <div class="open_images">
+            <img src="static/apprequest/images/Complate_ChildrenRoom_First.png" alt="" class="slider_images slider_second_images active_img">
+            <img src="static/apprequest/images/Complate_ChildrenRoom_Second.png" alt="" class="slider_images slider_second_images active_img">
+            <img src="static/apprequest/images/Complate_ChildrenRoom_Third.png" alt="" class="slider_images slider_second_images active_img">
+        </div>
+        <div class="button_navigation">
+            <img src="static/apprequest/images/ArrowForSlider.png"  onclick="onLeftSecond()" class="arrow_right slider_arrow">
+            <img src="static/apprequest/images/ArrowForSlider.png" onclick="onRightSecond()" class="arrow_left slider_arrow">
+        </div>
+    </div>
+
+    <div class="background_images" id="open_third_images">
+        <div class="clouse_button">
+            <img src="static/apprequest/images/CrossIconBlue.png" class="clouse_button_image">
+        </div>
+        <div class="open_images">
+            <img src="static/apprequest/images/Complate_BathRoom_First.png" alt="" class="slider_images slider_third_images active_img">
+            <img src="static/apprequest/images/Complate_BathRoom_Second.png" alt="" class="slider_images slider_third_images active_img">
+        </div>
+        <div class="button_navigation">
+            <img src="static/apprequest/images/ArrowForSlider.png"  onclick="onLeftThird()" class="arrow_right slider_arrow">
+            <img src="static/apprequest/images/ArrowForSlider.png" onclick="onRightThird()" class="arrow_left slider_arrow">
+        </div>
+    </div>
+
+    <div class="background_images" id="open_fourth_images">
+        <div class="clouse_button">
+            <img src="static/apprequest/images/CrossIconBlue.png" class="clouse_button_image">
+        </div>
+        <div class="open_images">
+            <img src="static/apprequest/images/Complate_TheOffice_First.png" alt="" class="slider_images slider_fourth_images active_img">
+            <img src="static/apprequest/images/Complate_TheOffice_Second.png" alt="" class="slider_images slider_fourth_images active_img">
+            <img src="static/apprequest/images/Complate_TheOffice_Third.png" alt="" class="slider_images slider_fourth_images active_img">
+        </div>
+        <div class="button_navigation">
+            <img src="static/apprequest/images/ArrowForSlider.png" onclick="onLeftFourth()" class="arrow_right slider_arrow">
+            <img src="static/apprequest/images/ArrowForSlider.png" onclick="onRightFourth()" class="arrow_left slider_arrow">
+        </div>
+    </div>
+
+    <div class="background_images" id="open_fifth_images">
+        <div class="clouse_button">
+            <img src="static/apprequest/images/CrossIconBlue.png" class="clouse_button_image">
+        </div>
+        <div class="open_images">
+            <img src="static/apprequest/images/Complate_BedRoom_First.png" alt="" class="slider_images slider_fifth_images active_img">
+            <img src="static/apprequest/images/Complate_BedRoom_Second.png" alt="" class="slider_images slider_fifth_images active_img">
+            <img src="static/apprequest/images/Complate_BedRoom_Third.png" alt="" class="slider_images slider_fifth_images active_img">
+        </div>
+        <div class="button_navigation">
+            <img src="static/apprequest/images/ArrowForSlider.png" onclick="onLeftFifth()" class="arrow_right slider_arrow">
+            <img src="static/apprequest/images/ArrowForSlider.png" onclick="onRightFifth()" class="arrow_left slider_arrow">
+        </div>
+    </div>
+
+    <div class="background_images" id="open_sixth_images">
+        <div class="clouse_button">
+            <img src="static/apprequest/images/CrossIconBlue.png" class="clouse_button_image">
+        </div>
+        <div class="open_images">
+            <img src="static/apprequest/images/Complate_Room_First.png" alt="" class="slider_images slider_sixth_images active_img">
+            <img src="static/apprequest/images/Complate_Room_Second.png" alt="" class="slider_images slider_sixth_images active_img">
+            <img src="static/apprequest/images/Complate_Room_Third.png" alt="" class="slider_images slider_sixth_images active_img">
+        </div>
+        <div class="button_navigation">
+            <img src="static/apprequest/images/ArrowForSlider.png"  onclick="onLeftSixth()" class="arrow_right slider_arrow">
+            <img src="static/apprequest/images/ArrowForSlider.png" onclick="onRightSixth()" class="arrow_left slider_arrow">
+        </div>
+    </div>
+</main>
+<article>
+</article>
+<!-- New code <script src="{% static 'service/js/main.js' %}"></script> -->
+<footer class="footer_class">
+
+    <div class="upper">
+        <a href="#Portraial_pages"><img class="upper_img" src="static/apprequest/images/up_arrow.png"></a>
+    </div>
+
+    <div class="contact_information">
+        <p class="cnt"><img class="phone_image" src="static/apprequest/images/phone.png"> 8 969 047 75 45     </p>
+        <p class="cnt lw"><img class="mail_image" src="static/apprequest/images/mail.png"> vexbobten@gmail.com</p>
+    </div>
+
+    <div class="link">
+        <a href="#Work_img"><p class="bw">ГОТОВЫЕ РАБОТЫ</p></a>
+        <a href="#Service_img" class="link_position"><p class="bw lw">УСЛУГИ</p></a>
+    </div>
+
+    <div class="copyright">
+        <p class="pr">&copy;2022 - 2024 ООО "СОМ сервис"</p>
+        <p class="pr lw">Все права защищены.</p>
+    </div>
+</footer>
+<script src="static/apprequest/js/main.js"></script>
+</body>
+</html>
