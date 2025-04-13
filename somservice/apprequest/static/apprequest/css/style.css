@@ -589,13 +589,13 @@ about_som_section*/
 	transition: all .25s ease;
 }
 
-/*
+
 .active_button{
 	cursor: default;
     pointer-events: none;
     opacity: 0.5;
 }
-*/
+
 
 .button_opens:hover{
 	color: black;

@@ -368,13 +368,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //Checkbox
 
-//checkConfidence.addEventListener('click', (check) => {
-//    if (check.target.checked){
-//        buttonOpen.classList.remove('active_button');
-//    } else {
-//        buttonOpen.classList.add('active_button');
-//    }
-//});
+checkConfidence.addEventListener('click', (check) => {
+    if (check.target.checked){
+        buttonOpen.classList.remove('active_button');
+    } else {
+        buttonOpen.classList.add('active_button');
+    }
+});
 
 //Checkbox
 
